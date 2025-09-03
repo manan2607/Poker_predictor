@@ -15,10 +15,8 @@ class PokerAnalyzerGUI:
         self.master.title("Poker Hand Analyzer")
         self.master.geometry("1100x850")
         
-        # Load and configure background image
         if PIL_AVAILABLE:
             try:
-                # Using a non-copyright image URL of a poker table
                 image_url = "https://images.unsplash.com/photo-1549419137-97d519d5543c?q=80&w=2940&auto=format&fit=crop"
                 with urlopen(image_url) as u:
                     raw_data = u.read()
@@ -36,15 +34,12 @@ class PokerAnalyzerGUI:
         self.style = ttk.Style()
         self.style.theme_use('clam')
         
-        # Configure button styles
         self.style.configure('TButton', font=('Inter', 12, 'bold'), relief='raised', padding=10, background='#333333', foreground='white')
         self.style.map('TButton', background=[('active', '#555555')])
         
-        # Adjusted padding for a more rectangular shape (portrait)
         self.style.configure('Card.TButton', font=('Inter', 10, 'bold'), relief='raised', borderwidth=2, padding=(5, 20), background='white')
         self.style.map('Card.TButton', background=[('disabled', '#555555')], foreground=[('disabled', '#A0A0A0')])
 
-        # Widget styling with updated fonts
         self.style.configure('TFrame', background='#006400')
         self.style.configure('TLabel', background='#006400', foreground='gold', font=('Inter', 12, 'bold', 'italic'))
         self.style.configure('TEntry', font=('Inter', 12), foreground='white', fieldbackground='#333333')
