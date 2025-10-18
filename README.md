@@ -89,3 +89,5 @@ The rank IDs used in `get_hand_rank` are (higher is better):
 | **2** | Two Pair | `(2, high_pair, low_pair, kicker)` |
 | **1** | One Pair | `(1, pair_rank, k1, k2, k3)` |
 | **0** | High Card | `(0, k1, k2, k3, k4, k5)` |
+
+⚠️ **A Note on Responsible Gaming:** While this tool uses logic and math to improve decision-making, poker remains a game of chance. Please only play with money you can afford to lose and seek help if gambling becomes a problem. Play smart, play responsibly.
