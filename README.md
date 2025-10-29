@@ -3,7 +3,7 @@
 The **Poker Hand Analyzer** is a Python desktop application built with **Tkinter** that provides a strategic edge in Texas Hold'em. It calculates your estimated hand equity (win probability) against multiple opponents using a Monte Carlo simulation and offers a recommended action (Fold, Call, or Raise) based on pot odds and perceived opponent aggressiveness.
 
 
-
+ 
 ## ✨ Features
 
 * **Interactive GUI:** A visually appealing and intuitive interface for card selection and game parameter input.
